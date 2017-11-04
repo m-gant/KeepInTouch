@@ -13,6 +13,7 @@
 		1911A3381FAD360C0097AB68 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1911A3371FAD360C0097AB68 /* Assets.xcassets */; };
 		1911A33B1FAD360C0097AB68 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1911A3391FAD360C0097AB68 /* LaunchScreen.storyboard */; };
 		1911A3431FAD382C0097AB68 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1911A3421FAD382C0097AB68 /* CameraViewController.swift */; };
+		1911A3451FAD63B50097AB68 /* EmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1911A3441FAD63B50097AB68 /* EmailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		1911A33A1FAD360C0097AB68 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1911A33C1FAD360C0097AB68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1911A3421FAD382C0097AB68 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		1911A3441FAD63B50097AB68 /* EmailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				1911A3391FAD360C0097AB68 /* LaunchScreen.storyboard */,
 				1911A33C1FAD360C0097AB68 /* Info.plist */,
 				1911A3421FAD382C0097AB68 /* CameraViewController.swift */,
+				1911A3441FAD63B50097AB68 /* EmailViewController.swift */,
 			);
 			path = KeepInTouch;
 			sourceTree = "<group>";
@@ -142,6 +145,7 @@
 				1911A3331FAD360B0097AB68 /* ViewController.swift in Sources */,
 				1911A3311FAD360B0097AB68 /* AppDelegate.swift in Sources */,
 				1911A3431FAD382C0097AB68 /* CameraViewController.swift in Sources */,
+				1911A3451FAD63B50097AB68 /* EmailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
