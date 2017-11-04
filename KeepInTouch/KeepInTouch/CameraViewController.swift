@@ -7,29 +7,36 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class CameraViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        self.navigationItem.title = "KIT"
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Logout", style: .plain, target: self, action: #selector(handleLogout))
+        
+        checkIfUserIsLoggedIn()
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @objc func handleLogout() {
+        present(LoginViewController(), animated: true, completion: nil)
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func checkIfUserIsLoggedIn() {
+        if FIRAuth.auth()?.currentUser?.uid == nil {
+            self.present(LoginViewController(), animated: true, completion: nil)
+        }
     }
-    */
+}
 
+extension UIColor {
+    convenience init(red: Int = 0, green: Int = 0, blue: Int = 0, opacity: Int = 255) {
+        precondition(0...255 ~= red   &&
+            0...255 ~= green &&
+            0...255 ~= blue  &&
+            0...255 ~= opacity, "input range is out of range 0...255")
+        self.init(red: CGFloat(red)/255, green: CGFloat(green)/255, blue: CGFloat(blue)/255, alpha: CGFloat(opacity)/255)
+    }
 }

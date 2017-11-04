@@ -7,23 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		168CF4FED63F8F2712143F72 /* Pods_KeepInTouch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FC4A1AF1A88324288D442E3 /* Pods_KeepInTouch.framework */; };
 		1911A3311FAD360B0097AB68 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1911A3301FAD360B0097AB68 /* AppDelegate.swift */; };
-		1911A3331FAD360B0097AB68 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1911A3321FAD360B0097AB68 /* ViewController.swift */; };
-		1911A3361FAD360B0097AB68 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1911A3341FAD360B0097AB68 /* Main.storyboard */; };
 		1911A3381FAD360C0097AB68 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1911A3371FAD360C0097AB68 /* Assets.xcassets */; };
 		1911A33B1FAD360C0097AB68 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1911A3391FAD360C0097AB68 /* LaunchScreen.storyboard */; };
 		1911A3431FAD382C0097AB68 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1911A3421FAD382C0097AB68 /* CameraViewController.swift */; };
+		804A02681FAD465200EEC675 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 804A02671FAD465200EEC675 /* GoogleService-Info.plist */; };
+		80E21BF91FAD3CAA00B732D2 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E21BF81FAD3CAA00B732D2 /* LoginViewController.swift */; };
+		80E21BFB1FAD3CB900B732D2 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E21BFA1FAD3CB900B732D2 /* RegisterViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1911A32D1FAD360B0097AB68 /* KeepInTouch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KeepInTouch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1911A3301FAD360B0097AB68 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1911A3321FAD360B0097AB68 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		1911A3351FAD360B0097AB68 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1911A3371FAD360C0097AB68 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1911A33A1FAD360C0097AB68 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1911A33C1FAD360C0097AB68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1911A3421FAD382C0097AB68 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		2286B72760898545AB3C9A8B /* Pods-KeepInTouch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KeepInTouch.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KeepInTouch/Pods-KeepInTouch.debug.xcconfig"; sourceTree = "<group>"; };
+		804A02671FAD465200EEC675 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../GoogleService-Info.plist"; sourceTree = "<group>"; };
+		80E21BF81FAD3CAA00B732D2 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		80E21BFA1FAD3CB900B732D2 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		8FC4A1AF1A88324288D442E3 /* Pods_KeepInTouch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KeepInTouch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9E2A1872BC5382F1CF0C5FB /* Pods-KeepInTouch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KeepInTouch.release.xcconfig"; path = "Pods/Target Support Files/Pods-KeepInTouch/Pods-KeepInTouch.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				168CF4FED63F8F2712143F72 /* Pods_KeepInTouch.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +49,8 @@
 			children = (
 				1911A32F1FAD360B0097AB68 /* KeepInTouch */,
 				1911A32E1FAD360B0097AB68 /* Products */,
+				DCC1A3A38C3B016593B32D5C /* Pods */,
+				D5D3CE4EE439BCA55F67AB97 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,14 +66,32 @@
 			isa = PBXGroup;
 			children = (
 				1911A3301FAD360B0097AB68 /* AppDelegate.swift */,
-				1911A3321FAD360B0097AB68 /* ViewController.swift */,
-				1911A3341FAD360B0097AB68 /* Main.storyboard */,
+				1911A3421FAD382C0097AB68 /* CameraViewController.swift */,
+				80E21BFA1FAD3CB900B732D2 /* RegisterViewController.swift */,
+				80E21BF81FAD3CAA00B732D2 /* LoginViewController.swift */,
 				1911A3371FAD360C0097AB68 /* Assets.xcassets */,
 				1911A3391FAD360C0097AB68 /* LaunchScreen.storyboard */,
 				1911A33C1FAD360C0097AB68 /* Info.plist */,
-				1911A3421FAD382C0097AB68 /* CameraViewController.swift */,
+				804A02671FAD465200EEC675 /* GoogleService-Info.plist */,
 			);
 			path = KeepInTouch;
+			sourceTree = "<group>";
+		};
+		D5D3CE4EE439BCA55F67AB97 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8FC4A1AF1A88324288D442E3 /* Pods_KeepInTouch.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DCC1A3A38C3B016593B32D5C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2286B72760898545AB3C9A8B /* Pods-KeepInTouch.debug.xcconfig */,
+				E9E2A1872BC5382F1CF0C5FB /* Pods-KeepInTouch.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +101,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1911A33F1FAD360C0097AB68 /* Build configuration list for PBXNativeTarget "KeepInTouch" */;
 			buildPhases = (
+				9E14496A6441EB106E1075DC /* [CP] Check Pods Manifest.lock */,
 				1911A3291FAD360A0097AB68 /* Sources */,
 				1911A32A1FAD360A0097AB68 /* Frameworks */,
 				1911A32B1FAD360A0097AB68 /* Resources */,
+				6D6C5D3915B025285EA69D07 /* [CP] Embed Pods Frameworks */,
+				E06002E1A3376ACB56B7662A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -127,19 +157,68 @@
 			buildActionMask = 2147483647;
 			files = (
 				1911A33B1FAD360C0097AB68 /* LaunchScreen.storyboard in Resources */,
+				804A02681FAD465200EEC675 /* GoogleService-Info.plist in Resources */,
 				1911A3381FAD360C0097AB68 /* Assets.xcassets in Resources */,
-				1911A3361FAD360B0097AB68 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6D6C5D3915B025285EA69D07 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KeepInTouch/Pods-KeepInTouch-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9E14496A6441EB106E1075DC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E06002E1A3376ACB56B7662A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KeepInTouch/Pods-KeepInTouch-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1911A3291FAD360A0097AB68 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1911A3331FAD360B0097AB68 /* ViewController.swift in Sources */,
+				80E21BF91FAD3CAA00B732D2 /* LoginViewController.swift in Sources */,
+				80E21BFB1FAD3CB900B732D2 /* RegisterViewController.swift in Sources */,
 				1911A3311FAD360B0097AB68 /* AppDelegate.swift in Sources */,
 				1911A3431FAD382C0097AB68 /* CameraViewController.swift in Sources */,
 			);
@@ -148,14 +227,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		1911A3341FAD360B0097AB68 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1911A3351FAD360B0097AB68 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		1911A3391FAD360C0097AB68 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -276,13 +347,15 @@
 		};
 		1911A3401FAD360C0097AB68 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2286B72760898545AB3C9A8B /* Pods-KeepInTouch.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8ERFWF6T4Q;
+				DEVELOPMENT_TEAM = SSJNP7NYVC;
 				INFOPLIST_FILE = KeepInTouch/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.Mitchell-Gant.KeepInTouch";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Jordan-George.KeepInTouch";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -291,13 +364,15 @@
 		};
 		1911A3411FAD360C0097AB68 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E9E2A1872BC5382F1CF0C5FB /* Pods-KeepInTouch.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8ERFWF6T4Q;
+				DEVELOPMENT_TEAM = SSJNP7NYVC;
 				INFOPLIST_FILE = KeepInTouch/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.Mitchell-Gant.KeepInTouch";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Jordan-George.KeepInTouch";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
