@@ -16,12 +16,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
-        window = UIWindow(frame: UIScreen.main.bounds)
-        window?.makeKeyAndVisible()
+//        window = UIWindow(frame: UIScreen.main.bounds)
+//        window?.makeKeyAndVisible()
         
-        let controller = CameraViewController()
-        let navigationController = UINavigationController(rootViewController: controller)
-        window?.rootViewController = navigationController
+//        let controller = CameraViewController()
+//        let navigationController = UINavigationController(rootViewController: controller)
+//        window?.rootViewController = navigationController
         
 //        let navigationBarAppearace = UINavigationBar.appearance()
 //        navigationBarAppearace.tintColor = .white

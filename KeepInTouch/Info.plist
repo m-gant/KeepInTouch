@@ -22,6 +22,8 @@
 	<true/>
 	<key>NSCameraUsageDescription</key>
 	<string>Just let us use it!</string>
+	<key>NSMainNibFile</key>
+	<string>Main</string>
 	<key>NSPhotoLibraryAddUsageDescription</key>
 	<string>To save Business Cards</string>
 	<key>NSPhotoLibraryUsageDescription</key>
