@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13528" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="RZR-yt-ScD">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13526"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Camera View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="CameraViewController" customModule="KeepInTouch" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ei6-aE-yCD">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XfR-VA-Rhi">
+                                <rect key="frame" x="145" y="587" width="85" height="30"/>
+                                <state key="normal" title="Take Picture"/>
+                                <connections>
+                                    <action selector="takePictureBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mYy-wz-JzE"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ei6-aE-yCD" secondAttribute="trailing" id="HKk-4l-zfS"/>
+                            <constraint firstItem="ei6-aE-yCD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="STP-5f-3m7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="XfR-VA-Rhi" secondAttribute="bottom" constant="50" id="TSn-sF-DoN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ei6-aE-yCD" secondAttribute="bottom" id="ThP-2W-IR7"/>
+                            <constraint firstItem="ei6-aE-yCD" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="WcS-Dn-69K"/>
+                            <constraint firstItem="XfR-VA-Rhi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lHa-zs-Viu"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="CKN-bP-JWz"/>
+                    <connections>
+                        <outlet property="outputView" destination="ei6-aE-yCD" id="cfb-dh-2MQ"/>
+                        <segue destination="UrB-bF-YIp" kind="show" identifier="toEmailVC" id="JUz-Zh-WMM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="553" y="34"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="8pX-wL-xXv">
+            <objects>
+                <navigationController id="RZR-yt-ScD" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="KAb-we-Ycw">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="KuJ-0r-pW6"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0yV-80-X0S" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-145" y="34"/>
+        </scene>
+        <!--Email View Controller-->
+        <scene sceneID="Spg-Fw-XHm">
+            <objects>
+                <viewController id="UrB-bF-YIp" customClass="EmailViewController" customModule="KeepInTouch" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oyU-Qb-zPp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="QEi-gn-wWI">
+                                <rect key="frame" x="10" y="114" width="355" height="100"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="To:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Qfe-JQ-oAc">
+                                        <rect key="frame" x="0.0" y="0.0" width="355" height="45"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="rO0-T4-ig8"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="UrB-bF-YIp" id="9wF-6y-0Cs"/>
+                                        </connections>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Subject:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ajp-eP-OZU">
+                                        <rect key="frame" x="0.0" y="55" width="355" height="45"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="Wyw-YN-GEV"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="UrB-bF-YIp" id="MP0-OZ-9tC"/>
+                                        </connections>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="wm2-4J-SBM">
+                                <rect key="frame" x="10" y="234" width="355" height="200"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="0.13371567919075145" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="eRf-X9-Aw5"/>
+                                </constraints>
+                                <string key="text">
+Dear _, 
+
+		It was great talking to you and I look forward to speaking with you again in the future.
+
+Best,
+_______</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E8n-Mw-p6X">
+                                <rect key="frame" x="289" y="454" width="76" height="30"/>
+                                <state key="normal" title="Send Email"/>
+                                <connections>
+                                    <action selector="sendMessageBtnPressed:" destination="UrB-bF-YIp" eventType="touchUpInside" id="T89-cw-wtu"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="cL7-Gh-pxc" firstAttribute="trailing" secondItem="E8n-Mw-p6X" secondAttribute="trailing" constant="10" id="1Jo-a2-M23"/>
+                            <constraint firstItem="cL7-Gh-pxc" firstAttribute="trailing" secondItem="QEi-gn-wWI" secondAttribute="trailing" constant="10" id="5V2-Wm-Jg8"/>
+                            <constraint firstItem="QEi-gn-wWI" firstAttribute="leading" secondItem="cL7-Gh-pxc" secondAttribute="leading" constant="10" id="7QB-te-6rV"/>
+                            <constraint firstItem="E8n-Mw-p6X" firstAttribute="top" secondItem="wm2-4J-SBM" secondAttribute="bottom" constant="20" id="XB2-xI-Phq"/>
+                            <constraint firstItem="wm2-4J-SBM" firstAttribute="top" secondItem="QEi-gn-wWI" secondAttribute="bottom" constant="20" id="Zi9-bH-QMC"/>
+                            <constraint firstItem="wm2-4J-SBM" firstAttribute="centerX" secondItem="Ajp-eP-OZU" secondAttribute="centerX" id="iJ9-lG-fVx"/>
+                            <constraint firstItem="wm2-4J-SBM" firstAttribute="width" secondItem="Ajp-eP-OZU" secondAttribute="width" id="wbj-FH-c0q"/>
+                            <constraint firstItem="QEi-gn-wWI" firstAttribute="top" secondItem="cL7-Gh-pxc" secondAttribute="top" constant="50" id="wrI-JE-AIO"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="cL7-Gh-pxc"/>
+                    </view>
+                    <connections>
+                        <outlet property="messageTextView" destination="wm2-4J-SBM" id="HJp-qo-g97"/>
+                        <outlet property="subjectTextField" destination="Ajp-eP-OZU" id="GiI-dr-fW4"/>
+                        <outlet property="toTextField" destination="Qfe-JQ-oAc" id="i8j-1G-ZgC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tWO-r9-KH6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1281" y="34"/>
+        </scene>
+    </scenes>
+</document>
