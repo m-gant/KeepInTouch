@@ -25,14 +25,8 @@ class EmailViewController: UIViewController, UITextViewDelegate, UITextFieldDele
             toTextField.text = email
         }
         
-
-        // Do any additional setup after loading the view.
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
     
     @IBAction func sendMessageBtnPressed(_ sender: Any) {
         let emailTo = toTextField.text!
@@ -65,5 +59,7 @@ class EmailViewController: UIViewController, UITextViewDelegate, UITextFieldDele
         textView.resignFirstResponder()
         return true
     }
+    
 
+    
 }

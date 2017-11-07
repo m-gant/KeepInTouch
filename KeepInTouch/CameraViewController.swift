@@ -29,11 +29,12 @@ class CameraViewController: UIViewController, AVCaptureVideoDataOutputSampleBuff
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        checkIfUserIsLoggedIn()
 
-        self.navigationItem.title = "KIT"
+        self.navigationItem.title = "KiT"
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Logout", style: .plain, target: self, action: #selector(handleLogout))
         
-        checkIfUserIsLoggedIn()
+        
         
         //camera setup
         cameraPosition = .back

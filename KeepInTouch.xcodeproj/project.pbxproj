@@ -13,10 +13,10 @@
 		1911A33B1FAD360C0097AB68 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1911A3391FAD360C0097AB68 /* LaunchScreen.storyboard */; };
 		1911A3431FAD382C0097AB68 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1911A3421FAD382C0097AB68 /* CameraViewController.swift */; };
 		1911A3451FAD63B50097AB68 /* EmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1911A3441FAD63B50097AB68 /* EmailViewController.swift */; };
-		80A60B3B1FB13ACB000F73C9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80A60B391FB13ACB000F73C9 /* Main.storyboard */; };
+		80A60B3D1FB14003000F73C9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 80A60B3C1FB14002000F73C9 /* GoogleService-Info.plist */; };
+		80A60B3E1FB1408D000F73C9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80A60B391FB13ACB000F73C9 /* Main.storyboard */; };
 		80E21BF91FAD3CAA00B732D2 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E21BF81FAD3CAA00B732D2 /* LoginViewController.swift */; };
 		80E21BFB1FAD3CB900B732D2 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E21BFA1FAD3CB900B732D2 /* RegisterViewController.swift */; };
-		80EBE8241FB0B44C0070C858 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 80EBE8231FB0B44C0070C858 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,9 +29,9 @@
 		1911A3441FAD63B50097AB68 /* EmailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailViewController.swift; sourceTree = "<group>"; };
 		2286B72760898545AB3C9A8B /* Pods-KeepInTouch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KeepInTouch.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KeepInTouch/Pods-KeepInTouch.debug.xcconfig"; sourceTree = "<group>"; };
 		80A60B3A1FB13ACB000F73C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		80A60B3C1FB14002000F73C9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		80E21BF81FAD3CAA00B732D2 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		80E21BFA1FAD3CB900B732D2 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
-		80EBE8231FB0B44C0070C858 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		8FC4A1AF1A88324288D442E3 /* Pods_KeepInTouch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KeepInTouch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9E2A1872BC5382F1CF0C5FB /* Pods-KeepInTouch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KeepInTouch.release.xcconfig"; path = "Pods/Target Support Files/Pods-KeepInTouch/Pods-KeepInTouch.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -73,12 +73,12 @@
 				80E21BFA1FAD3CB900B732D2 /* RegisterViewController.swift */,
 				80E21BF81FAD3CAA00B732D2 /* LoginViewController.swift */,
 				1911A3421FAD382C0097AB68 /* CameraViewController.swift */,
-				80A60B391FB13ACB000F73C9 /* Main.storyboard */,
 				1911A3441FAD63B50097AB68 /* EmailViewController.swift */,
+				80A60B391FB13ACB000F73C9 /* Main.storyboard */,
 				1911A3371FAD360C0097AB68 /* Assets.xcassets */,
 				1911A3391FAD360C0097AB68 /* LaunchScreen.storyboard */,
 				1911A33C1FAD360C0097AB68 /* Info.plist */,
-				80EBE8231FB0B44C0070C858 /* GoogleService-Info.plist */,
+				80A60B3C1FB14002000F73C9 /* GoogleService-Info.plist */,
 			);
 			path = KeepInTouch;
 			sourceTree = "<group>";
@@ -162,10 +162,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80A60B3E1FB1408D000F73C9 /* Main.storyboard in Resources */,
 				1911A33B1FAD360C0097AB68 /* LaunchScreen.storyboard in Resources */,
+				80A60B3D1FB14003000F73C9 /* GoogleService-Info.plist in Resources */,
 				1911A3381FAD360C0097AB68 /* Assets.xcassets in Resources */,
-				80EBE8241FB0B44C0070C858 /* GoogleService-Info.plist in Resources */,
-				80A60B3B1FB13ACB000F73C9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
