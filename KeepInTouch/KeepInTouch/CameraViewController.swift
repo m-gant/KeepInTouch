@@ -127,7 +127,7 @@ class CameraViewController: UIViewController, AVCaptureVideoDataOutputSampleBuff
             print("fetching data")
             guard error == nil else {
                 print("something messed up")
-                print(error?.localizedDescription)
+                print(error?.localizedDescription as Any)
                 return
             }
             
@@ -155,7 +155,7 @@ class CameraViewController: UIViewController, AVCaptureVideoDataOutputSampleBuff
                 }
                 print(returnedData)
                 print("--------------")
-                print(self.getEmail(lineData: returnedData))
+                print(self.getEmail(lineData: returnedData)!)
                 
                 if let email = self.getEmail(lineData: returnedData) {
                     self.toEmail = email
@@ -225,7 +225,7 @@ class CameraViewController: UIViewController, AVCaptureVideoDataOutputSampleBuff
             }
         }
     
-        var words = emailLine.split(separator: " ")
+        let words = emailLine.split(separator: " ")
         var email: String?  = nil
         for word in words {
             if word.contains("@") {
